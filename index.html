@@ -114,11 +114,11 @@
       <div class="cotas">
   
         <div class="cotas-one">
-                    <button type="button" class="cota" onclick="selecionarValor(15)">
+                    <button type="button" class="cota" onclick="selecionarValor(20)">
               <div class="cota-qtd">                    
-                  +15
+                  +20
               </div>
-              <h1>R$14,85</h1>
+              <h1>R$19,85</h1>
               <h2>SELECIONAR</h2>
           </button>
   
@@ -278,8 +278,8 @@
           var valorAtual = parseInt(input.value);
           if (valorAtual < 200) {
               if (valorAtual === 0) {
-                  input.value = 15;
-              } else if (valorAtual === 15) {
+                  input.value = 20;
+              } else if (valorAtual === 20) {
                   input.value = 30;
               } else if (valorAtual === 30) {
                   input.value = 40;
@@ -297,7 +297,7 @@
       function decrementar() {
           var input = document.getElementById('numero');
           var valorAtual = parseInt(input.value);
-          if (valorAtual > 15) {
+          if (valorAtual > 20) {
               if (valorAtual === 200) {
                   input.value = 100;
               } else if (valorAtual === 100) {
@@ -307,7 +307,7 @@
               } else if (valorAtual === 40) {
                   input.value = 30;
               } else if (valorAtual === 30) {
-                  input.value = 15;
+                  input.value = 20;
               }
           }
           highlightButton();
@@ -327,7 +327,7 @@
               if (valorBotao === valorAtual) {
                   botao.classList.add('cota-selected');
                   switch (valorBotao) {
-                      case 15:
+                      case 20:
                           link = "https://go.cinqpay.com.br/87prczq46n";
                           break;
                       case 30:
